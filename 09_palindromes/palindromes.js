@@ -1,4 +1,7 @@
-const palindromes = function () {
+const palindromes = function (phrase) {
+    phrase = phrase.replace(/[^a-z]+/gi, '').toLowerCase(); //removes any no-letter
+
+    return phrase == phrase.split("").reverse().join("");
 
 };
 
